@@ -83,7 +83,7 @@ species mobileData skills:[moving]{
 	float duration;
 	int init_date;
 	bool visible <-false;
-	int size<-12;
+	int size<-4;
 	
 	reflex update{
 		if(global_start_date + (cycle*1000) > init_date and global_start_date + (cycle*1000) < init_date + duration){
