@@ -21,7 +21,7 @@ species cells{
   }
 }
 
-experiment exp1  type: gui virtual:true{
+experiment exp1  type: gui{
   output {
     display View1 type:opengl {
       species cells;
@@ -32,6 +32,10 @@ experiment exp1  type: gui virtual:true{
 experiment exp2  type: gui parent:exp1{
   output {
     display View2 type:opengl parent:View1 {
+      species cells;
+    }
+    
+    display View3 type:opengl {
       species cells;
     }
   }
